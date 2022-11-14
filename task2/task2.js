@@ -30,13 +30,7 @@ class Messenger {
     });
   }
 
-//   send(author, text) {
-//     const message = new Message(author, text);
-//     this.history.push(message);
-//     const p = document.createElement("p");
-//     p.innerHTML = message.toHtml();
-//     this.historyelement.appendChild(p);
-//   }
+
 }
 
 function gettime() {
@@ -49,8 +43,5 @@ let messenger = new Messenger("messenger");
 sendBtn.addEventListener("click", () => {
   const author = authorInput.value;
   const message = messageInput.value;
-//   authorInput.value = "";
-//   messageInput.value = "";
   console.log(author, message,gettime())
-//   messenger.send(author, message);
 });
